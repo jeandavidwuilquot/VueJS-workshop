@@ -1,6 +1,6 @@
 ## On se lance:
 
-![Gif Cat jump](https://media.giphy.com/media/EpiaEXhGVC7kI/giphy.gif)
+![Gif Cat jump](assets/img/jump.gif)
 
 
 Maintenant que tu sais comment tu dois faire, tu crées un nouveau projet et on commence par ce simple code:

@@ -36,7 +36,7 @@ ___
 
 Maintenant, nous allons voir comment afficher conditionnellement des éléments avec Vue.
 
-VNous voulons afficher un texte indiquant si notre produit est en stock ou non, en fonction de nos données.
+Nous voulons afficher un texte indiquant si notre produit est en stock ou non, en fonction de nos données.
 
 Commence par ajouter une nouvelle propriété "inStock" à tes datas.
 
