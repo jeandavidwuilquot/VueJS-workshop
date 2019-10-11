@@ -14,6 +14,10 @@ Bienvenue à notre atelier, nous allons vous présentez une introduction a [__Vu
 2. [Allez on se lance](begining.md)
 3. [Liaison d'attribut](attribute.md)
 4. [Rendu conditionnel](condition.md)
+5. [Rendu de liste](list.md)
+6. [La gestion des événements](event.md)
+7. [Les propriétés calculées](computed.md)
+8. [Les composants](composent.md)
 
 ---
 ## Vue.js c'est quoi?
