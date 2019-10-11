@@ -92,11 +92,8 @@ ___
   * v-else
   * v-show
 
-* Si ce qui est à l'intérieur des guillemets de la directive est véridique, l'élément s'affichera.
+* Si ce qui est à l'intérieur des guillemets de la directive est __true__, l'élément      s'affichera.
 * Vous pouvez utiliser des expressions à l'intérieur des guillemets de la directive.
 * V-show ne fait que basculer la visibilité, il n’insère ni ne supprime l’élément du DOM.
 
-## Bosse un peu
-
-Ajoute une propriété _onSale_ aux data du produit qui est utilisée pour restituer de manière conditionnelle une valeur span qui indique «En vente!».
-___
+[La suite par ici](list.md)

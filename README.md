@@ -5,8 +5,7 @@ Ce workshop a été préparé par :
 * [Jean-David Wuilquot](https://github.com/jeandavidwuilquot?tab=repositories)  (surtout)
 * [Emmanuel Godfroid](https://github.com/GodfroidEmmanuel) (un peu)
 
-Bienvenue à notre atelier, nous allons vous présentez une introduction a [__Vue.js__](https://fr.vuejs.org/) qui vous permettra de vous familiariser avec ce framework. Tu peux copier/coller comme un gros porc mais si ça fonctionne pas, tu m'appelles pas. Sinon, je suis dispo :-)
-
+Bienvenue à notre atelier, nous allons vous présentez une introduction a [__Vue.js__](https://fr.vuejs.org/) qui vous permettra de vous familiariser avec ce framework. Tu vas voir Vue.js c'est génial.
 ---
 
 ## Table des matières:
