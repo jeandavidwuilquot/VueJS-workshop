@@ -141,3 +141,5 @@ Dans cet esprit, il est plus efficace d'utiliser une propriété calculée plut�
 Il est également important de garder à l'esprit que vous ne devez pas transformer votre modèle de données à partir d'une propriété calculée. Vous calculez simplement des valeurs basées sur d'autres valeurs. Gardez ces fonctions pures.
 ___
 [Un peu de courage c'est bientôt fini](component.md)
+
+![Gif courage](https://media.giphy.com/media/b346HapBsg7oQ/giphy.gif)
