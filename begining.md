@@ -72,7 +72,7 @@ ___
 
 # Présentation de la réactivité
 
-La raison pour laquelle Vue est capable d'afficher productimmédiatement la valeur est parce que Vue est réactif . En d'autres termes, les données de l'instance sont liées à chaque endroit où les données sont référencées. Donc, non seulement Vue peut faire apparaître ses données dans le code HTML qui y fait référence, mais ce code HTML sera mis à jour pour afficher de nouvelles valeurs chaque fois que les données référencées seront modifiées.
+La raison pour laquelle Vue est capable d'afficher immédiatement la valeur de _product_ c'est parce que Vue est réactif . En d'autres termes, les données de l'instance sont liées à chaque endroit où les données sont référencées. Donc, non seulement Vue peut faire apparaître ses données dans le code HTML qui y fait référence, mais ce code HTML sera mis à jour pour afficher de nouvelles valeurs chaque fois que les données référencées seront modifiées.
 
 Pour le prouver, ouvre ta console et change la valeur de notre chaîne de produit. Tape app.product="Ce que tu veux" et regarde ce qu'il se passe.
 

@@ -123,3 +123,5 @@ tout autre événement DOM
 
 ## Bosse un peu:
 Crées un nouveau bouton et une nouvelle méthode pour décrémenter la valeur de __cart__.
+
+![Il y en a encore](binding.md)
