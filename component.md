@@ -207,3 +207,4 @@ Nous avons donc passé les data de notre parent à son composant enfant et nous 
 Crée un nouveau component __product-details__ avec un props __details__.
 
 ![gif applause](https://media.giphy.com/media/dZo51w9gv37QQ/giphy.gif)
+
