@@ -5,15 +5,15 @@
 
 Maintenant que tu sais comment tu dois faire, tu crées un nouveau projet et on commence par ce simple code:
 
-```
-<div id="app">                                                                              HTML
+``` html
+<div id="app">                                                                              
     <h2>{{product}}</h2>
 </div>
 <script src="main.js"></script>
 ```
 
-```
-let app = new Vue({                                                                          JS
+```js 
+let app = new Vue({                                                                          
   el: '#app',
   data: {
     product: 'Chaussettes'
@@ -33,7 +33,7 @@ ___
 
 # Connexion à un élément
 
-```
+``` 
 el:#app,
 ```
 L'instance Vue est ensuite connectée à un élément de votre choix, créant ainsi une relation entre l'instance et cette partie du DOM. En d'autres termes, nous activons Vue sur la div avec l'id __app__ définissant '``#app``'l'élément ( el) avec lequel notre instance est connectée.
@@ -43,7 +43,7 @@ ___
 
 Une instance de Vue a une place pour les données, dans sa propriété data.
 
-```
+``` js
 data:{
     product:"Chaussettes"
 }

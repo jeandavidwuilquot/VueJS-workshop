@@ -17,14 +17,14 @@ ___
 Au cœur de Vue.js, il y a un système qui va nous permettre de faire le rendu des données déclarativement dans le DOM en utilisant simplement cette syntaxe de template :
 
 ``` html
-<div id="app">                        HTML
+<div id="app">                       
   {{ message }}
 </div>
 ```
 
 Tu crées un fichier main.js est tu taps ça dedans:
 ``` js
-let app = new Vue({                                                                           JS
+let app = new Vue({                                                                          
   el: '#app',
   data: {
     message: 'Hello Vue !'
@@ -41,15 +41,16 @@ Nous venons tout juste de créer notre première application Vue ! Ça ressemble
 En plus de l’interpolation de texte, nous pouvons également lier les attributs d’un élément comme ceci :
 
 ``` html
-<div id="app-2">                                                                            HTML
+<div id="app-2">                                                                           
   <span v-bind:title="message">
     Passez votre souris sur moi pendant quelques secondes
     pour voir mon titre lié dynamiquement !
+    {{message}}
   </span>
 </div>
 ```
 ``` js
-let app2 = new Vue({                                                                         JS
+let app2 = new Vue({                                                                        
   el: '#app-2',
   data: {
     message: 'Vous avez affiché cette page le ' + new Date().toLocaleString()
@@ -63,13 +64,13 @@ ___
 ## Conditions et boucles
 
 ``` html
-<div id="app-3">                                                                            HTML
+<div id="app-3">                                                                            
   <p v-if="seen">Maintenant vous me voyez</p>
 </div>
 ```
 
 ``` js
-let app3 = new Vue({                                                                         JS 
+let app3 = new Vue({                                                                         
   el: '#app-3',
   data: {
     seen: true
@@ -83,7 +84,7 @@ Cet exemple démontre que nous pouvons lier des données non seulement aux texte
 Il existe d'autres directives, chacune avec leur propre fonction spécifique. Par exemple,la directive __v-for__ peut être utilisée pour afficher une liste d’éléments en provenance d’un tableau de données.
 
 ``` html
-<div id="app-4">                                                                            HTML
+<div id="app-4">                                                                            
   <ol>
     <li v-for="todo in todos">
       {{ todo.text }}
@@ -93,7 +94,7 @@ Il existe d'autres directives, chacune avec leur propre fonction spécifique. Pa
 ```
 
 ``` js
-let app4 = new Vue({                                                                          JS
+let app4 = new Vue({                                                                          
   el: '#app-4',
   data: {
     todos: [
@@ -111,14 +112,14 @@ ___
 Afin de permettre aux utilisateurs d’interagir avec votre application, nous pouvons utiliser la directive __v-on__ pour attacher des écouteurs d’évènements qui invoquent des méthodes sur nos instances de Vue :
 
 ``` html
-<div id="app-5">                                                                            HTML
+<div id="app-5">                                                                            
   <p>{{ message }}</p>
   <button v-on:click="reverseMessage">Message retourné</button>
 </div>
 ```
 
 ``` js
-var app5 = new Vue({                                                                          JS
+var app5 = new Vue({                                                                          
   el: '#app-5',
   data: {
     message: 'Hello Vue.js !'
@@ -135,14 +136,14 @@ Notez que dans la méthode, nous avons seulement mis à jour l’état de l’ap
 Vue fournit aussi la directive __v-model__ qui fait de la liaison de données bidirectionnelle entre les champs d’un formulaire et l’état de l’application. Une simple formalité :
 
 ``` html
-<div id="app-6">                                                                            HTML
+<div id="app-6">                                                                            
   <p>{{ message }}</p>
   <input v-model="message">
 </div>
 ```
 
 ``` js
-var app6 = new Vue({                                                                          JS
+var app6 = new Vue({                                                                          
   el: '#app-6',
   data: {
     message: 'Hello Vue !'
@@ -157,7 +158,7 @@ Le système de composant est un autre concept important de Vue, car c’est une 
 Dans Vue, un composant est essentiellement une instance de Vue avec des options prédéfinies. Déclarer un composant avec Vue est très simple :
 
 ``` js
-// Définit un nouveau composant appelé todo-item                                              JS
+// Définit un nouveau composant appelé todo-item                                              
 Vue.component('todo-item', {
   template: '<li>Ceci est une liste</li>'
 })
@@ -166,7 +167,7 @@ Maintenant nous pouvons l’insérer dans le template d’un autre composant :
 
 ``` html
 <ol>
-  <!-- Crée une instance du composant todo-list -->                                         HTML
+  <!-- Crée une instance du composant todo-list -->                                         
   <todo-item></todo-item>
 </ol>
 ```
@@ -174,7 +175,7 @@ Maintenant nous pouvons l’insérer dans le template d’un autre composant :
 Mais cela donnerait comme rendu le même texte, ce qui n’est pas vraiment intéressant. Nous devrions être capables de passer les données de la portée parente dans le composant enfant. Modifions la définition du composant pour lui permettre d’accepter une __prop__ :
 
 ``` js
-Vue.component('todo-item', {                                                               JS 
+Vue.component('todo-item', {                                                               
   // Le composant todo-item accepte maintenant une
   // « prop » qui est comme un attribut personnalisé.
   // Cette prop est appelée todo.
@@ -185,7 +186,7 @@ Vue.component('todo-item', {                                                    
 Maintenant nous pouvons passer la liste dans chaque composant répété en utilisant __v-bind__ :
 
 ``` html
-<div id="app-7">                                                                            HTML
+<div id="app-7">                                                                            
   <ol>
     <!--
       Maintenant nous fournissons à chaque todo-item l'objet todo
@@ -203,7 +204,7 @@ Maintenant nous pouvons passer la liste dans chaque composant répété en utili
 ```
 
 ``` js
-Vue.component('todo-item', {                                                                  JS
+Vue.component('todo-item', {                                                                  
   props: ['todo'],
   template: '<li>{{ todo.text }}</li>'
 })
@@ -225,7 +226,7 @@ Ceci n’est qu’un exemple grossier, nous avons réussi à séparer notre appl
 Pour une grosse application, il est nécessaire de la diviser entièrement en composants afin de rendre le développement plus abordable. Nous parlerons des composants plus précisément plus tard dans le guide, mais en attendant voici un exemple (imaginaire) de ce à quoi un template d’application pourrait ressembler avec des composants :
 
 ``` html
-<div id="app">                                                                             HTML
+<div id="app">                                                                             
   <app-nav></app-nav>
   <app-view>
     <app-sidebar></app-sidebar>

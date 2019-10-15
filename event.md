@@ -44,10 +44,17 @@ Comme vous pouvez le constater, __addToCart__ est le nom d’une méthode qui se
 Comme pour les __data__, l’instance Vue a une propriété facultative pour les méthodes. Nous allons donc écrire notre  méthode __addToCart__ dans cette option.
 
 ``` js
+var app = new Vue({
+  el: '#app',
+  data: {
+        //les datas viennent ici
+        },
 methods: {
     addToCart() {
       this.cart += 1
-    },
+    }
+  }
+  })
 ```
 
 Maintenant, lorsque nous cliquons sur notre bouton, notre méthode __addToCart__ est déclenchée, ce qui incrémente la valeur de _cart_, qui est affichée dans notre balise _p_.
@@ -77,7 +84,7 @@ Premièrement, ajoutons __variantImage__ à chacune de nos variantes.
 
 Maintenant, chaque variante a respectivement une image avec des chaussettes vertes et bleues.
 
-Nous voulons être en mesure de survoler la couleur d'une variante avec notre souris et de l' variantImage afficher à l'emplacement actuel de l'image de notre produit.
+Nous voulons être en mesure de survoler la couleur d'une variante avec notre souris et d'afficher variantImage  à l'emplacement actuel de l'image de notre produit.
 
 Nous voulons être en mesure d'afficher la couleur d'une variante en survolant son nom avec la souris.
 

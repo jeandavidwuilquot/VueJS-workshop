@@ -5,7 +5,7 @@ On va maintenant se pencher sur les différentes manières de connecter des donn
 En utilisant l'attribut __v:bind__ affiche une image de chaussette verte (les images et le css ne sont pas loin).
 
 ``` html
-<div class="nav-bar"></div>            HTML
+<div class="nav-bar"></div>            
 
 <div id="app">
   
@@ -25,7 +25,7 @@ En utilisant l'attribut __v:bind__ affiche une image de chaussette verte (les im
 ```
 
 ``` js
-let app = new Vue({                      JS
+let app = new Vue({                      
   el: '#app',
   data: {
     product: 'Chaussettes',
@@ -49,9 +49,9 @@ ___
 ___
 ## Bosse un peu
 
-Ajoutez un lien vers votre objet de données et utilisez-le __v-bind__ pour le synchroniser avec une balise d'ancrage dans votre code HTML. Astuce: vous allez être lié à l' __href__ attribut.
+Ajoute un lien vers la page de votre choix en utilisant la directive __v-bind__ . Astuce: utilisez l'attribut  __href__.
 
-T'as réussi c'est cool
+T'as réussi c'est cool.
 
 ![Gif good boy](https://media.giphy.com/media/l0HlHA1QrGxff7GtW/giphy.gif)
 

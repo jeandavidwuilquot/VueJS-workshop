@@ -18,10 +18,20 @@ On rajoute une propriété au data:
 Puisque les propriétés calculées calculent une valeur plutôt que de stocker une valeur, ajoutons l'option __computed__  à notre instance et créons une propriété calculée appelée title.
 
 ```js
+var app = new Vue({
+  el: '#app',
+  data: {
+        //les datas viennent ici
+        },
+methods: {
+        //les méthodes viennent ici
+        },
 computed: {
         title() {
             return this.brand + ' ' + this.product  
+        }
         },
+        })       
 ```
 C'est assez simple. Quand title est appelé, il concaténe __brand__ et __product__ dans une nouvelle string et retourne cette même string.
 
@@ -58,7 +68,7 @@ Cela fonctionne bien pour le moment, mais si on veut changer plus que l'image en
 Au lieu d’avoir __image__ dans nos données, remplaçons-le par __selectedVariant__ ce que nous initialiserons à 0.
 
 ```js
-selectVariant:0,
+selectedVariant:0,
 
 ```
 Pourquoi l'initialiser à 0? Parce que nous allons définir cela en fonction de l'index sur lequel  nous faisons un mouseover. Nous pouvons ajouter un index à notre v-for, comme ça:

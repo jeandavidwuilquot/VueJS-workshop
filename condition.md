@@ -1,7 +1,7 @@
 Si t'es toujours avec nous ton code devrait ressembler à ça:
 
 ``` html
-<div class="nav-bar"></div>            HTML
+<div class="nav-bar"></div>            
 
 <div id="app">
   
@@ -22,12 +22,12 @@ Si t'es toujours avec nous ton code devrait ressembler à ça:
 ```
 
 ``` js
-let app = new Vue({                     JS
+let app = new Vue({                     
   el: '#app',
   data: {
     product: 'Chaussettes',
     image:'jeSaisPasCommentTuTorganises.jpg',
-    link:'https://www.amazon.fr/s?k=sex+toys&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2',
+    link:'https://cutt.ly/KeaTF8e',
   } 
 })
 ```
@@ -86,7 +86,7 @@ ___
 
 ## T'as appris quoi?
 
-* Il y a des directives Vue pour rendre conditionnellement les éléments:
+* Il y a des directives Vue pour afficher conditionnellement les éléments:
   * v-si
   * v-else-if
   * v-else

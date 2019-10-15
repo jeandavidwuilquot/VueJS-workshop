@@ -2,7 +2,7 @@
 
 Nous allons apprendre à afficher des listes sur nos pages Web.
 
-Nous voulons pouvoir afficher une liste des cataréstiques de nos produits.
+Nous voulons pouvoir afficher une liste des caractéristiques de nos produits.
 * 80% polyester
 * 20% coton
 * Unisexe

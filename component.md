@@ -56,7 +56,7 @@ Vue.component('product',{
 
 Ainsi, si nous avons plusieurs éléments frères, comme dans notre modèle __product__, ils doivent être enveloppés dans un élément conteneur externe afin que le modèle ait exactement un élément à la racine.
 
-Maintenant que notre modèle est complet avec notre produit HTML, nous allons ajouter nos données, méthodes et propriétés calculées à partir de l'instance racine dans notre nouveau composant.
+Maintenant nous allons transférer tout notre code html dans notre template. Il ne nous reste plus qu'a ajouter nos données, méthodes et propriétés calculées à partir de l'instance racine dans notre nouveau composant.
 
 Maintenant que notre template est complet avec notre __product__ HTML, nous allons ajouter nos données, méthodes et propriétés calculées à la racine de l'instance dans notre nouveau composant.
 
@@ -117,7 +117,7 @@ Souvent, dans une application, un composant doit recevoir des données de son pa
 
 Supposons que notre instance racine contienne des données d'utilisateur, spécifiant si l'utilisateur est titulaire d'un compte premium. Si tel est le cas, notre instance ressemble maintenant à ceci:
 ``` js
-var app=new vue({
+let app=new Vue({
     el:'#app',
     data:{
         premium:true
@@ -168,7 +168,7 @@ Alors qu'est-ce qu'on a fait?
 
 On a passé à notre composant __product__ un props, ou un attribut personnalisé , appelé __premium__. Nous lions cet attribut personnalisé __:__ à celui premium qui se trouve dans les data de notre instance.
 
-Maintenant que notre instance racine passe correctement  premium dans son composant enfant __product__ . Maintenat que l'attribut  __premium__ est bien lié aux data de notre instance racine, la valeur actuelle de premium dans les data de notre instance sera toujours envoyée à __product__.
+Maintenant que notre instance racine passe correctement  premium dans son composant enfant __product__ . Maintenant que l'attribut  __premium__ est bien lié aux data de notre instance racine, la valeur actuelle de premium dans les data de notre instance sera toujours envoyée à __product__.
 
 Si nous avons correctement réglé le problème, nous devrions voir: «User is premium: true».
 
@@ -193,7 +193,7 @@ Et maintenant on voit «Shipping: Free». Pourquoi? Parce que __premium__ est é
 
 Nous avons donc passé les data de notre parent à son composant enfant et nous les avons utilisées dans une propriété calculée qui affiche différentes valeurs d’expédition en fonction de la valeur de notre props.
 
-## Tas appris quoi?
+## T'as appris quoi?
 
 * Les composants sont des blocs de code, regroupés dans un élément personnalisé.
 * Les composants rendent les applications plus faciles à gérer en divisant le tout en parties récupérables ayant leur propre structure et leur propre comportement.
