@@ -76,14 +76,14 @@ Vue.component('product',{
         //les méthodes viennent ici
     },
     computed:{
-        //les propriétés viennent ici
+        //les propriétés calculées viennent ici
     }
 })
 ```
 
 La structure de ce composant est presque identique à celle de notre instance d'origine. Comme t'es fort tu as remarqué que  data est maintenant devenu une fonction? Mais pourquoi ce changement?
 
-Parce que nous voulons réutiliser les composants souvents. Et si nous avions plusieurs composants __product__, nous devons nous assurer de créerune  instance distincte de nos data pour chaque composant. Puisque data est maintenant une fonction qui retourne un objet de données, chaque composant aura ses propres données. Si data ne s'était pas une fonction, chaque composant __product__ partagerait les mêmes ~~data~~ partout où il était utilisé, ce qui irait à l'encontre du but d'être un composant réutilisable.
+Parce que nous voulons réutiliser les composants souvents. Et si nous avions plusieurs composants __product__, nous devons nous assurer de créer une  instance distincte de nos data pour chaque composant. Puisque data est maintenant une fonction qui retourne un objet de données, chaque composant aura ses propres données. Si data ne s'était pas une fonction, chaque composant __product__ partagerait les mêmes ~~data~~ partout où il était utilisé, ce qui irait à l'encontre du but d'être un composant réutilisable.
 
 Maintenant que nous avons déplacé notre code lié au produit dans son propre composant __product__, notre instance ressemble à ceci:
 

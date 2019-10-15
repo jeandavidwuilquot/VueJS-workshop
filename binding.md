@@ -13,7 +13,7 @@ Maintenant, on va apprendre à styler dynamiquement notre code HTML en liant des
 
 Notre premier objectif est d’utiliser nos variantes de couleurs pour styliser les background-color des _divs_. Puisque nos variantes de couleurs sont “vert” et “bleu”, on veut un div avec un background-color vert  et un div avec un background-color bleu.
 
-On va commencer une classe de "color-box" à notre div (cette classe est déjà définie dans notre fichier CSS). Puisque nous affichons toujours les mots «vert» et «bleu» sur la page, nous pouvons utiliser ces strings de couleurs différentes et les lier à notre attribut style, comme suit:
+On va commencer par ajouter une classe de "color-box" à notre div (cette classe est déjà définie dans notre fichier CSS). Puisque nous affichons toujours les mots «vert» et «bleu» sur la page, nous pouvons utiliser ces strings de couleurs différentes et les lier à notre attribut style, comme suit:
 
 ``` html
 <div class="color-box"
@@ -25,7 +25,7 @@ On va commencer une classe de "color-box" à notre div (cette classe est déjà 
 ```
 Nous utilisons un style en ligne pour définir dynamiquement le background-colorde nos divs, en fonction de nos variantes de couleurs ( variant.variantColor).
 
-Maintenant que nos divs sont stylés par le __variantColor__, nous n’avons plus besoin de les AFFICHER. Ainsi, nous pouvons supprimer la balise _p_ et la déplacer __@mouseover__ dans la div même.
+Maintenant que nos _divs_ sont stylés par le __variantColor__, nous n’avons plus besoin de les AFFICHER. Ainsi, nous pouvons supprimer la balise _p_ et la déplacer __@mouseover__ dans la div même.
 
 ``` HTML
  <div class="color-box"
@@ -35,7 +35,7 @@ Maintenant que nos divs sont stylés par le __variantColor__, nous n’avons plu
     @mouseover="updateProduct(variant.variantImage)">
 </div> 
 ```
-Maintenant, lorsque nous survolons la bOX bleue et que les chaussettes bleues apparaissent, survolez la boîte verte et les chaussettes vertes apparaissent. C'est pas cool, ça!
+Maintenant, lorsque nous survolons la box bleue et que les chaussettes bleues apparaissent, survolez la boîte verte et les chaussettes vertes apparaissent. C'est pas cool, ça!
 Maintenant que nous avons appris à faire la liaison de style, explorons la liaison de classe.
 
 Pour le moment, on a cette propriété dans nos data:
@@ -79,11 +79,11 @@ Génial! Nous avons combiné notre nouvelle liaison de classe de compétences av
 ___
 
 ## T'as appris quoi,
-* Les données peuvent être liées à un styleattribut d'élément
-* Les données peuvent être liées à un élément class
+* Les données peuvent être liées à un attribut style.
+* Les données peuvent être liées à un élément class.
 * Nous pouvons utiliser des expressions à l'intérieur de la liaison de classe d'un élément pour déterminer si une classe doit apparaître ou non.
 ___
-##Qu'est-ce que tu dois savoir d'autre:
+## Qu'est-ce que tu dois savoir d'autre:
 
 ``` html
 <div :class="classObject"></div>

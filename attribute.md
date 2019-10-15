@@ -2,7 +2,7 @@
 
 On va maintenant se pencher sur les différentes manières de connecter des données aux attributs de vos éléments HTML.
 
-En utilisant l'attribut _v:bind_ affiche une image de chaussette verte (les images et le css sont pas loin).
+En utilisant l'attribut __v:bind__ affiche une image de chaussette verte (les images et le css ne sont pas loin).
 
 ``` html
 <div class="nav-bar"></div>            HTML
@@ -43,13 +43,13 @@ Ceci est une fonctionnalité très utilisée dans Vue. Parce qu'il est si commun
 ___
 ## T'as appris quoi?
 * Les données peuvent être liées à des attributs HTML.
-* La syntaxe est v-bind:ou :pour faire court.
-* Le nom d'attribut qui vient après le :spécifie l'attribut auquel nous lions les données.
-* À l'intérieur des guillemets de l'attribut, nous référençons les données auxquelles nous sommes liés.
+* La syntaxe est __v-bind:__ ou __:__ pour faire court.
+* Le nom d'attribut qui vient après le __:__ spécifie l'attribut auquel nous lions les données.
+* À l'intérieur des guillemets de l'attribut, nous référençons les données auxquelles elles sont liés.
 ___
 ## Bosse un peu
 
-Ajoutez un lien vers votre objet de données et utilisez-le v-bind pour le synchroniser avec une balise d'ancrage dans votre code HTML. Astuce: vous allez être lié à l' href attribut.
+Ajoutez un lien vers votre objet de données et utilisez-le __v-bind__ pour le synchroniser avec une balise d'ancrage dans votre code HTML. Astuce: vous allez être lié à l' __href__ attribut.
 
 T'as réussi c'est cool
 

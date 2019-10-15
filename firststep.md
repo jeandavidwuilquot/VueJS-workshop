@@ -36,7 +36,7 @@ let app = new Vue({                                                             
 Hello Vue!
 ```
 
-Nous venons tout juste de créer notre première application Vue ! Ça ressemble à un simple rendu de template en chaine de caractères, mais sous le capot, Vue effectue un réel travail. Les données et le DOM sont maintenant couplés, et tout est à présent réactif. Comment s’en rendre compte ? Ouvrez juste la console JavaScript de votre navigateur (là maintenant, sur cette page) et attribuez à app.message différentes valeurs. Vous devriez voir le rendu de l’exemple en cours se mettre à jour en concordance.
+Nous venons tout juste de créer notre première application Vue ! Ça ressemble à un simple rendu de template en chaîne de caractères, mais sous le capot, Vue effectue un réel travail. Les données et le DOM sont maintenant couplés, et tout est à présent réactif. Comment s’en rendre compte ? Ouvrez juste la console JavaScript de votre navigateur (là maintenant, sur cette page) et attribuez à __app.message__ différentes valeurs. Vous devriez voir le rendu de l’exemple en cours se mettre à jour en concordance.
 
 En plus de l’interpolation de texte, nous pouvons également lier les attributs d’un élément comme ceci :
 
@@ -56,9 +56,9 @@ let app2 = new Vue({                                                            
   }
 })
 ```
-Ici nous venons de rencontrer quelque chose de nouveau. L’attribut v-bind que vous voyez est appelé une directive. Les directives sont préfixées par v- pour indiquer que ce sont des attributs spéciaux fournis par Vue, et comme vous l’avez peut-être deviné, elles appliquent un comportement réactif spécifique au DOM après rendu. Ici cela veut basiquement dire : « garde l’attribut title de cet élément à jour avec la propriété message de l’instance de Vue ».
+Ici nous venons de rencontrer quelque chose de nouveau. L’attribut __v-bind__ que vous voyez est appelé une directive. Les directives sont préfixées par __v-__ pour indiquer que ce sont des attributs spéciaux fournis par Vue, et comme vous l’avez peut-être deviné, elles appliquent un comportement réactif spécifique au DOM après le rendu. Ici cela veut basiquement dire : « garde l’attribut __title__ de cet élément à jour avec la propriété message de l’instance de Vue ».
 
-Si vous ouvrez votre console JavaScript une nouvelle fois et entrez app2.message = 'un nouveau message', de nouveau vous verrez le HTML lié — dans notre cas l’attribut title — se mettre à jour.
+Si vous ouvrez votre console JavaScript une nouvelle fois et entrez __app2.message__ = 'un nouveau message', de nouveau vous verrez le HTML lié — dans notre cas l’attribut title — se mettre à jour.
 ___
 ## Conditions et boucles
 
@@ -80,7 +80,7 @@ Côté console entrez __app3.seen = false__. Vous devriez voir le message dispar
 
 Cet exemple démontre que nous pouvons lier des données non seulement aux textes et attributs, mais également à la structure du DOM. De plus, Vue fournit un puissant système d’effets de transition qui peut automatiquement appliquer des effets de transition quand des éléments sont insérés/mis à jour/enlevés par Vue.
 
-Il existe quelques autres directives, chacune avec leur propre fonction spécifique. Par exemple,la directive v-for peut être utilisée pour afficher une liste d’éléments en provenance d’un tableau de données.
+Il existe d'autres directives, chacune avec leur propre fonction spécifique. Par exemple,la directive __v-for__ peut être utilisée pour afficher une liste d’éléments en provenance d’un tableau de données.
 
 ``` html
 <div id="app-4">                                                                            HTML
@@ -108,7 +108,7 @@ Dans la console, entrez __app4.todos.push({ text: 'Nouvel élément' })__. Vous 
 ___
 ## Gestion des entrées utilisateurs
 
-Afin de permettre aux utilisateurs d’interagir avec votre application, nous pouvons utiliser la directive v-on pour attacher des écouteurs d’évènements qui invoquent des méthodes sur nos instances de Vue :
+Afin de permettre aux utilisateurs d’interagir avec votre application, nous pouvons utiliser la directive __v-on__ pour attacher des écouteurs d’évènements qui invoquent des méthodes sur nos instances de Vue :
 
 ``` html
 <div id="app-5">                                                                            HTML
@@ -233,7 +233,7 @@ Pour une grosse application, il est nécessaire de la diviser entièrement en co
   </app-view>
 </div>
 ```
-Nous venons juste d’introduire brièvement les fonctionnalités les plus basiques du cœur de Vue.js. Nous allons maintenant coder notre première application, une page pour un produit.
+Nous venons juste d’introduire brièvement les fonctionnalités les plus basiques du cœur de Vue.js. Nous allons maintenant coder notre première application, une page de présentation d'un produit.
 
 Si vous êtes prêts:
 [Allez on se lance](begining.md)

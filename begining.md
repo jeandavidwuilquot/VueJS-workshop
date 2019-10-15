@@ -36,7 +36,7 @@ ___
 ```
 el:#app,
 ```
-L'instance Vue est ensuite connectée à un élément de votre choix, créant ainsi une relation entre l'instance et cette partie du DOM. En d'autres termes, nous activons Vue sur la div avec l'id de appen définissant '``#app``'l'élément ( el) avec lequel notre instance est connectée.
+L'instance Vue est ensuite connectée à un élément de votre choix, créant ainsi une relation entre l'instance et cette partie du DOM. En d'autres termes, nous activons Vue sur la div avec l'id __app__ définissant '``#app``'l'élément ( el) avec lequel notre instance est connectée.
 ___
 
 # Mettre des données à sa place
@@ -53,7 +53,7 @@ ___
 
 # Utiliser une expression
 
-Si nous voulons que notre _product_ apparaisse dans notre h1, nous pouvons mettre le _product_à l'intérieur de ces doubles moustaches.
+Si nous voulons que notre __product__ apparaisse dans notre h1, nous pouvons mettre le __product__ à l'intérieur de ces doubles moustaches.
 
 ```
 <h1>{{product}}</h1>
@@ -67,12 +67,12 @@ ___
 
 Les expressions nous permettent d'utiliser les valeurs de données existantes, ainsi que la logique, pour produire de nouvelles valeurs de données.
 
-Lorsque Vue voit l'expression {{ product }}, il reconnaît que nous référençons les données de l'instance de Vue associée et remplace cette expression par la valeur de product, dans ce cas: «Chaussettes».
+Lorsque Vue voit l'expression __{{ product }}__, il reconnaît que nous référençons les données de l'instance de Vue associée et remplace cette expression par la valeur de __product__, dans ce cas: «Chaussettes».
 ___
 
 # Présentation de la réactivité
 
-La raison pour laquelle Vue est capable d'afficher immédiatement la valeur de _product_ c'est parce que Vue est réactif . En d'autres termes, les données de l'instance sont liées à chaque endroit où les données sont référencées. Donc, non seulement Vue peut faire apparaître ses données dans le code HTML qui y fait référence, mais ce code HTML sera mis à jour pour afficher de nouvelles valeurs chaque fois que les données référencées seront modifiées.
+La raison pour laquelle Vue est capable d'afficher immédiatement la valeur de __product__ c'est parce que Vue est réactif. En d'autres termes, les données de l'instance sont liées à chaque endroit où les données sont référencées. Donc, non seulement Vue peut faire apparaître ses données dans le code HTML qui y fait référence, mais ce code HTML sera mis à jour pour afficher de nouvelles valeurs chaque fois que les données référencées seront modifiées.
 
 Pour le prouver, ouvre ta console et change la valeur de notre chaîne de produit. Tape app.product="Ce que tu veux" et regarde ce qu'il se passe.
 
@@ -82,9 +82,9 @@ ___
 # T'as appris quoi?
 
 * Comment commencer à écrire une application Vue avec une instance Vue et comment charger des données de base sur la page Web.
-* L'instance Vue est la racine de chaque application Vue
-* L'instance Vue se connecte à un élément du DOM
+* L'instance Vue est la racine de chaque application Vue.
+* L'instance Vue se connecte à un élément du DOM.
 * Les données de l'instance Vue peuvent être affichées à l'aide de la syntaxe {{ }}, appelée expression.
-* La vue est réactive
+* La vue est réactive.
 
 [La suite par ici](attribute.md)

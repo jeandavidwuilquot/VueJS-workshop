@@ -1,6 +1,6 @@
 ## Rendu de liste
 
-Nous allons apprendre à afficher des listes sur nos pages Web avec Vue.
+Nous allons apprendre à afficher des listes sur nos pages Web.
 
 Nous voulons pouvoir afficher une liste des cataréstiques de nos produits.
 * 80% polyester
@@ -13,7 +13,7 @@ Rajoute ce tableau au data:
 details:["80% polyester","20% coton","Unisexe"]
 ```
 
-Pour parcourir le tableau et restituer les données, tu dois utiliser la directive _v-for_
+Pour parcourir le tableau et restituer les data, tu dois utiliser la directive __v-for__
 
 ``` html                               HTML
 <ul>
@@ -46,7 +46,7 @@ Pour afficher la couleur de chaque variante:
         <p>{{ variant.variantColor }}</p>
  </div>
 ```
-Notez qu'il est recommandé d'utiliser un attribut __key__ lors du rendu de tels éléments afin que Vue puisse garder une trace de l'id de chaque nœud. Nous allons ajouter cela maintenant, en utilisant la variantIdpropriété unique de notre variante .
+Notez qu'il est recommandé d'utiliser un attribut __key__ lors du rendu de tels éléments afin que Vue puisse garder une trace de l'id de chaque nœud. Nous allons l'ajouter maintenant, en utilisant la propriété unique __variantId__ de notre variante .
 
 ``` html
  <div v-for="variant in variants" :             key="variant.variantId">

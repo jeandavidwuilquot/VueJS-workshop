@@ -39,7 +39,7 @@ Donc au lieu de:
 
 Chaussettes Becode apparaît dans notre h1
 
-Nous avons pris deux valeurs de nos data et les avons "calculées" de manière à créer une nouvelle valeur. Si nous devions à nouveau mettre __brand__ à jour, disons à «Technifutur», notre propriété calculée n'aurait pas besoin d'être refactorisée. Elle renverrait toujours la string correcte: "Technifutur Socks". Notre propriété calculée __title__ continuerait à utiliser __brand__, comme avant, mais __brand__ aurait maintenant une nouvelle valeur.
+Nous avons pris deux valeurs de nos data et les avons "calculées" de manière à créer une nouvelle valeur. Si nous devions à nouveau mettre __brand__ à jour, disons à «Technifutur», notre propriété calculée n'aurait pas besoin d'être refactorisée. Elle renverrait toujours la string correcte: "Chaussettes Technifutur". Notre propriété calculée __title__ continuerait à utiliser __brand__, comme avant, mais __brand__ aurait maintenant une nouvelle valeur.
 
 C'était un exemple assez simple mais pas tout à fait pratique, nous allons donc travailler sur une utilisation plus complexe d'une propriété calculée.
 
@@ -124,7 +124,7 @@ return this.variants[this.selectedVariant].variantQuantity
 ```
 Ceci est très semblable à notre propriété calculée __image__, nous visons simplement le __variantQuantity__ plutôt que le __variantImage__.
 
-Maintenant, lorsque nous faisons un hover sur la variante bleue, qui a une quantité null, inStock sera évaluée  false et nous Rupture de stock s'affichera.
+Maintenant, lorsque nous faisons un hover sur la variante bleue, qui a une quantité null, inStock sera évaluée  false et "Rupture de stock" s'affichera.
 ___
 
 ## T'as appris quoi?
@@ -134,7 +134,7 @@ ___
 
 ## Qu'est-ce que tu dois savoir d'autre:
 
-Les propriétés calculées sont mises en cache, ce qui signifie que le résultat est enregistré jusqu'à ce que ses dépendances changent. Ainsi, lorsque des quantitymodifications seront apportées, le cache sera effacé et ** la prochaine fois que vous accéderez à la valeur de inStock, il renverra un nouveau résultat et le mettra en cache.
+Les propriétés calculées sont mises en cache, ce qui signifie que le résultat est enregistré jusqu'à ce que ses dépendances changent. Ainsi, lorsque des modifications seront apportées à quantity, le cache sera effacé et la prochaine fois que vous accéderez à la valeur de inStock, il renverra un nouveau résultat et le mettra en cache.
 
 Dans cet esprit, il est plus efficace d'utiliser une propriété calculée plutôt qu'une méthode pour une opération coûteuse que vous ne souhaitez pas réexécuter à chaque fois que vous y accédez.
 
