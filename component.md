@@ -83,7 +83,7 @@ Vue.component('product',{
 
 La structure de ce composant est presque identique à celle de notre instance d'origine. Comme t'es fort tu as remarqué que  data est maintenant devenu une fonction? Mais pourquoi ce changement?
 
-Parce que nous voulons réutiliser les composants souvents. Et si nous avions plusieurs composants __product__, nous devons nous assurer de créer une  instance distincte de nos data pour chaque composant. Puisque data est maintenant une fonction qui retourne un objet de données, chaque composant aura ses propres données. Si data ne s'était pas une fonction, chaque composant __product__ partagerait les mêmes ~~data~~ partout où il était utilisé, ce qui irait à l'encontre du but d'être un composant réutilisable.
+Parce que nous voulons réutiliser les composants souvents. Et si nous avions plusieurs composants __product__, nous devons nous assurer de créer une  instance distincte de nos data pour chaque composant. Puisque data est maintenant une fonction qui retourne un objet de données, chaque composant aura ses propres données. Si data ne s'était pas une fonction, chaque composant __product__ partagerait les mêmes data partout où il était utilisé, ce qui irait à l'encontre du but d'être un composant réutilisable.
 
 Maintenant que nous avons déplacé notre code lié au produit dans son propre composant __product__, notre instance ressemble à ceci:
 
@@ -196,12 +196,12 @@ Nous avons donc passé les data de notre parent à son composant enfant et nous 
 ## Tas appris quoi?
 
 * Les composants sont des blocs de code, regroupés dans un élément personnalisé.
-* Les composants rendent les applications plus faciles à gérer en divisant le tout en parties récupérables ayant leur propre structure et leur propre comportement
-* Les données dans un composant doivent être une fonction
-* Les props sont utilisés pour transmettre des données du parent à l'enfant
-* Nous pouvons spécifier les exigences (required) que les props qu'un composant reçoit
-* Les props sont introduits dans un composant via un attribut personnalisé
-* Les props peuvent être liés dynamiquement aux données du parent
+* Les composants rendent les applications plus faciles à gérer en divisant le tout en parties récupérables ayant leur propre structure et leur propre comportement.
+* Les données dans un composant doivent être une fonction.
+* Les props sont utilisés pour transmettre des données du parent à l'enfant.
+* Nous pouvons spécifier les exigences (required) que les props qu'un composant reçoit.
+* Les props sont introduits dans un composant via un attribut personnalisé.
+* Les props peuvent être liés dynamiquement aux données du parent.
 
 ## Bosse un peu :
 Crée un nouveau component __product-details__ avec un props __details__.
