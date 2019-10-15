@@ -162,7 +162,7 @@ Maintenant, il nous reste à passer la valeur __premium__dans notre component __
 </div> 
 ```
 
-![gif office](https://media.giphy.com/media/LKTTAzGboJGzC/giphy.gif)
+![gif big bang](https://media.giphy.com/media/3osxYACfOYULLSpNjG/giphy.gif)
 
 Alors qu'est-ce qu'on a fait?
 
